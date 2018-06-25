@@ -1,0 +1,295 @@
+body {
+	font-family: 'Raleway', sans-serif !important;
+	background-color: #fffdf4;
+	overflow-x:hidden;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 7em;
+	letter-spacing: 45px;
+	line-height: 0.7em;
+	padding-left: 45px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.5em;
+	letter-spacing: 5px;
+	font-weight: 400;
+	border-top: 1px solid black;
+	line-height: 2em;
+}
+
+h3 {
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-transform: uppercase;;
+	letter-spacing: 3px;
+	padding-left: 3px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+h5 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 3em;
+}
+
+footer {
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0 -5px 15px 0 rgba(0,0,0,0.05);
+	background-color: #fffdf4;
+	color: #e0e0e0;
+	text-align:center;
+}
+
+.content-images {
+	border-radius: 5px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row {margin:0px;}
+
+.landing {
+	background-image: url("landingpic.jpg");
+	background-position: center top;
+	padding: 150px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	box-shadow: 0 -15px 15px 0 rgb(255, 253, 244) inset;
+	
+	animation: landingAnimation 60s linear;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+
+.header-1 {
+	padding: 50px;
+	background-color: rgba(255, 250, 188, 0.5);
+	margin-top: -100px;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	animation: headerIn 1s ease;
+}
+
+.header-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.contentArea {
+	background-color: #fcfbf4;
+	box-shadow: 0 15px 25px 0 rgb(255, 253, 244) inset;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0 25px 0;
+	margin-top: 15px;
+}
+
+.btn-group-vertical {width: 100%;}
+
+.btn {
+	background-color: transparent;
+	text-align: right;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.btn:focus {box-shadow: none;}
+
+.about-project {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.starting-page {
+	position: absolute;
+	width: 100%;
+	top: 0%;
+	opacity: 1;
+	z-index: 4;
+}
+
+.verta-page {
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	opacity: 0;
+	z-index: 3;
+	height: 0%;
+}
+
+.istorija-page {
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	opacity: 0;
+	z-index: 2;
+	height: 0%;
+}
+
+.sarasas-page {
+	position: absolute;
+	width: 100%;
+	left: -100%;
+	opacity: 0;
+	z-index: 2;
+	height: 0%;
+}
+
+.hide-page {
+	animation: slideOut 1s ease;
+	animation-fill-mode: forwards;
+}
+
+.show-page {
+	animation: slideIn 1s ease;
+	animation-fill-mode: forwards;
+}
+
+.read-more-btn {
+	font-size: 1em;
+	background-color: rgb(155, 255, 157);
+}
+
+.read-more-btn:hover {
+	box-shadow: 0 0 25px 0 rgba(0, 0 ,0, 0.1) inset;
+}
+
+.read-more-btn-2 {
+	font-size: 1em;
+	background-color: rgb(255, 253, 137);
+}
+
+.read-more-btn-2:hover {
+	box-shadow: 0 0 25px 0 rgba(0, 0 ,0, 0.1) inset;
+}
+
+.go-back {
+	position: fixed;
+	bottom: 0%;
+	margin: 50px;
+	width: 50px;
+	height: 50px;
+	opacity: 0.5;
+	z-index: 1000;
+	transition: opacity 1s, transform 1s;
+}
+
+.go-back:hover {
+	opacity: 0.7;
+	transform: scale(1.1, 1.1);
+}
+
+.verta-content {
+	padding: 25px 0;
+}
+
+.verta-content:nth-child(even) {
+	background-color: white;
+}
+
+.sarasas-rows {
+	padding: 25px 0;
+}
+
+.sarasas-rows:nth-child(even) {
+	background-color: white;
+}
+
+.teritoriju-list > li {
+    padding: 10px 0;
+	list-style-type: circle;
+	padding-left: 25px;
+	margin-left: 15px;
+}
+
+.rezervatai-list {
+	margin-top: 34px
+}
+
+#vertaBtn, #istorijaBtn, #sarasasBtn {
+	border-right: 3px solid transparent;
+}
+
+#vertaBtn:hover {
+	border-right: 3px solid yellow;
+}
+
+#istorijaBtn:hover {
+	border-right: 3px solid green;
+}
+
+#sarasasBtn:hover {
+	border-right: 3px solid red;
+}
+
+@keyframes slideOut {
+	from{left: 0; opacity: 1; height: 100%;}
+	to{left: -100%; opacity: 0; height: 0%;}
+}
+
+@keyframes slideIn {
+	from{left: 200%; opacity: 0; height: 0%;}
+	to{left: 0%; opacity: 1; height: 100%;}
+}
+
+@keyframes landingAnimation {
+	from{background-position: center-top;}
+	to{background-position: center bottom;}
+}
+
+@keyframes headerIn {
+	from{left: -100%;}
+	to{left: 0%;}
+}
+
+@media only screen and (max-width: 425px) {
+	h1 {font-size: 5em;}
+	h2 {letter-spacing: 0px;}
+	.header-1 {padding: 0px;}
+	.carousel-caption > h3 {
+		font-size: 1em;
+		letter-spacing: 0px;
+		padding-left: 0px;
+	}
+	.go-back > img {
+		max-height: 100%;
+	}
+	.go-back {
+		bottom: auto;
+		margin: 0px;
+		width: 100%;
+		background-color: white;
+	}
+}

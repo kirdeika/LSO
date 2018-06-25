@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<div class="starting-page">
+		<div class="row">
+			<div class="col-sm-12 landing">
+				<h1>LSO</h1>
+				<h2>Lietuvos Saugomi Objektai</h2>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-4 header-1">
+				<div class="btn-group-vertical">
+					<button id="vertaBtn" type="button" class="btn" onclick="testFunction(this)">Verta aplankyti</button>
+					<button id="istorijaBtn" type="button" class="btn" onclick="testFunction(this)">Istorija</button>
+					<button id="sarasasBtn" type="button" class="btn" onclick="testFunction(this)">Sąrašas</button>
+				</div>
+			</div>
+			<div class="col-sm-8 header-2">
+				<img src="lt100.png" style="width: auto; height: 150px;"/>
+			</div>
+		</div>
+		<div class="contentArea">
+			<div class="row">
+				<div class="col-sm-12 title">
+					<h3>Apie projektą</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 about-project">
+					<ul>
+						<li><strong>Tema:</strong> Lietuvos saugomos teritorijos</li>
+						<li><strong>Tikslas:</strong> Supažindinti lankytoją su Lietuvos saugomomis teritorijomis</li>
+						<li><strong>Uždaviniai:</strong></li>
+						<li style="margin-left: 50px;">Pateikti didžiąją dalį sąrašo objektų ar vietovių kurios yra saugomos Lietuvoje</li>
+						<li style="margin-left: 50px;">Sukoncentruoti informaciją iš skirtingų šaltinių į vieną patogią svetainę</li>
+						<li style="margin-left: 50px;">Išskirti pačius svarbiausius ir įdomiausius saugomus objektus ar vietoves </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="verta-page">
+		<div class="go-back">
+			<img src="images/back.svg">
+		</div>
+		<div class="row">
+			<div class="col-sm-12 title">
+				<h3>Verta aplankyti</h3>
+			</div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/1280px-Cepkeliu_swamps.jpg" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3">
+				<h4>Čepkeliai</h4>
+				<p>Čepkelių valstybinis gamtinis rezervatas yra pietiniame Lietuvos pakraštyje, Katros upe išvesta Lietuvos ir Baltarusijos valstybės siena taip pat yra ir rezervato pietinė riba. Iš šiaurės ir vakarų rezervatas ribojasi su Dzūkijos nacionaliniu parku, rytuose yra apsauginė zona. Pagal administracinį Lietuvos suskirstymą Čepkeliai yra Varėnos rajone. Direkcijoje įrengta ekspozicija.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#cepkeliu-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4>Kamanų rezervatas</h4>
+				<p>Kamanų valstybinis rezervatas yra šiaurės vakarų Lietuvoje, Akmenės rajone. Plotas 3935 ha, pelkės užima 67 proc. teritorijos. Direkcija Akmenėje II. Rezervatas įsteigtas 1979 m. birželio 29 d., siekiant išsaugoti didžiausių ir vertingiausių šiaurės Lietuvos molingų lygumų kompleksą su jam būdingomis morfologinėmis formomis, augalija ir gyvūnija.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#kamanu-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/Kamanų_rezervatas.JPG" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/kernaves-piliakalniai.JPG" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3">
+				<h4>Kernavės kultūrinis</h4>
+				<p>Kernavės archeologijos ir istorijos muziejus-rezervatas įkurtas pietryčių Lietuvoje, dešiniajame Neries krante. Plotas 194,4 ha, direkcija Kernavėje. Rezervatas įsteigtas 1989 m. siekiant išsaugoti neįkainojamą archeologijos, istorijos ir gamtos paminklų kompleksą.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#kernaves-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4>Viešvilės rezervatas</h4>
+				<p>Viešvilės rezervatas – valstybinis rezervatas vakarinėje Lietuvoje, į šiaurę nuo Viešvilės; direkcija Eičiuose. Plotas 3216 ha, rezervatą supa 2459 ha buferinės apsaugos zona. Įsteigtas 1991 m. siekiant išsaugoti gamtiniu požiūriu labai vertingą, natūralią Viešvilės upelio baseino ekosistemą. 1993 m. paskelbtas tarptautinės svarbos pelke.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#viesviles-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/Viešvilės-rezervatas.jpg" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/1280px-Vilnius_Cathedral_Facade.jpg" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3">
+				<h4>Vilniaus pilių rezervatas</h4>
+				<p>Vilniaus pilių valstybinis kultūrinis rezervatas yra Vilniaus senamiestyje. Plotas 54,8 ha. Rezervatas įkurtas 1997 m. siekiant išsaugoti ir puoselėti Lietuvos istorinį valstybės ir dvasinės kultūros centrą – Vilniaus pilis, jų teritoriją ir čia esančias kultūros ir gamtos vertybes. Tai mažiausias valstybinis rezervatas Lietuvoje.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#piliu-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<div class="row verta-content">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<h4>Žuvinto biosferos rezervatas</h4>
+				<p>Žuvinto biosferos rezervatas yra pietų Lietuvoje, beveik visas priklauso Dovinės upės baseinui (tik Žaltyčio ežeras ir apylinkės priklauso Želsvelės baseinui). Dovinė ir Želsvelė yra Šešupės baseino upės. Rezervatas apima Žuvinto ir Amalvos pelkių kompleksus, į vakarus nuo Žuvinto esančius Buktos mišką ir Žaltyčio ežerą ir pelkes apie jį.</p>
+				<button type="button" class="btn read-more-btn-2" data-toggle="modal" data-target="#zuvinto-modal">
+					Skaityti plačiau
+				</button>
+			</div>
+			<div class="col-sm-3">
+				<img class="content-images" src="images/zuv.png" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</div>
+	
+	<div class="istorija-page">
+		<div class="go-back">
+			<img src="images/back.svg">
+		</div>
+		<div class="row">
+			<div class="col-sm-12 title">
+				<h3>Istorija</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-4">
+				<img class="content-images" src="images/1280px-Paluse_Lusiai_lake.jpg" style="max-width: 100%;" />
+				<h5><a href="https://lt.wikipedia.org/wiki/L%C5%AB%C5%A1iai" target="_blank">Lūšių ežeras Aukštaitijos nacionaliniame parke.</a></h5>
+			</div>
+			<div class="col-sm-6">
+				<p>
+					Viduramžiais kunigaikščių ir žemvaldžių medžioklės plotuose, kuriuos galima prilyginti medžioklės draustiniams, buvo draudžiama be reikalo lankytis, baidyti žvėris, trukdyti jiems maitintis. 1918 m. paskelbus Lietuvos nepriklausomybę, ir vėliau, baigiantis XX a. 4-ajam dešimtmečiui, pradėta steigti gamtinius rezervatus. Iškart po Antrojo pasaulinio karo imta steigti medžioklės draustinius, rezervatus, ūkius, kurių tikslas buvo išsaugoti gamtos turtus, o ypač – medžiojamuosius žvėris ir paukščius. Daugelis šių teritorijų tapo būsimų draustinių, valstybinių parkų ir rezervatų užuomazga.
+				</p>
+				<p>
+					1960–1975 m. įsteigta beveik 100 draustinių. Tuo metu saugomos teritorijos užėmė 2 % Lietuvos teritorijos. Po nepriklausomybės atkūrimo 1990 m. įsteigti 5 nacionaliniai ir 30 regioninių parkų. Šiuo metu saugomos teritorijos užima 11,5 proc. Lietuvos teritorijos.
+				</p>
+				<h4>Saugomų teritorijų tinklo kūrimas:</h4>
+				<ul class="teritoriju-list">
+					<li>XX a. 4-ajame dešimtmetyje įsteigti Žuvinto, Kiauneliškio ir Kamšos gamtiniai rezervatai;</li>
+					<li>1974 m. įsteigtas pirmasis Lietuvoje Aukštaitijos nacionalinis parkas (anksčiau vadintas Lietuvos TSR nac. parku);</li>
+					<li>1975 m. įsteigtas Čepkelių, 1979 m. – Kamanų, 1991 m. – Viešvilės valstybiniai rezervatai;</li>
+					<li>1991 m. buvo įsteigti Dzūkijos, Kuršių nerijos ir Žemaitijos nacionaliniai bei Trakų istorinis nacionalinis parkas;</li>
+					<li>1992 m. įkurta 30 regioninių parkų.</li>
+				</ul>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+
+	<div class="sarasas-page">
+		<div class="go-back">
+			<img src="images/back.svg">
+		</div>
+		<div class="row">
+			<div class="col-sm-12 title">
+				<h3>Sąrašas</h3>
+			</div>
+		</div>
+		<div class="row sarasas-rows">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<h4>Valstybiniai rezervatai</h4>
+				<p>
+					Valstybiniai rezervatai – griežčiausiai saugomos teritorijos, steigiamos moksliniu požiūriu vertingam gamtiniam arba kultūriniam Lietuvos kraštovaizdžiui saugoti ir tirti. Ūkinė veikla juose draudžiama.
+				</p>
+				<p>
+					Šie rezervatai užima mažiau nei 0,5 proc. Lietuvos teritorijos.
+				</p>
+				<ul class="rezervatai-list">
+					<li>Čepkelių gamtinis</li>
+					<li>Kamanų gamtinis</li>
+					<li>Kernavės kultūrinis</li>
+					<li>Viešvilės gamtinis</li>
+					<li>Vilniaus pilių kultūrinis</li>
+					<li>Žuvinto gamtinis</li>
+				</ul>
+			</div>
+			<div class="col-sm-4">
+				<img class="content-images" src="images/SAUGOMU TERITORIJU KATEGORIJOS 20161230-max.jpg" style="max-width: 100%;" />
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div class="row sarasas-rows">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<!-- big big code for carousel -->
+				<div id="demo" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+					</ul>
+
+					<!-- The slideshow -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/1280px-Paluse_Lusiai_lake.jpg" alt="Aukštaitijos nacionalinis parkas" style="max-width: 100%;">
+							<div class="carousel-caption">
+								<h3>Aukštaitijos nacionalinis parkas</h3>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/1280px-Cepkeliu_swamps.jpg" alt="Dzūkijos nacionalinis parkas" style="max-width: 100%;">
+							<div class="carousel-caption">
+								<h3>Dzūkijos nacionalinis parkas</h3>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/Image-Lithuania_Juodkrante_sand_dunes.jpg" alt="Kuršių nerijos nacionalinis parkas" style="max-width: 100%;">
+							<div class="carousel-caption">
+								<h3>Kuršių nerijos nacionalinis parkas</h3>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/Trakai-Troki.jpg" alt="Trakų istorinis nacionalinis parkas" style="max-width: 100%;">
+							<div class="carousel-caption">
+								<h3>Trakų istorinis nacionalinis parkas</h3>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="images/Lithuania_Plateliai_lake.jpg" alt="Žemaitijos nacionalinis parkas" style="max-width: 100%;">
+							<div class="carousel-caption">
+								<h3>Žemaitijos nacionalinis parkas</h3>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h4>Nacionaliniai parkai</h4>
+				<p>
+					Nacionaliniai parkai – saugomos teritorijos, steigiamos nacionalinės svarbos gamtinio ir kultūrinio kraštovaizdžio kompleksams saugoti, tvarkyti ir jų naudojimui reguliuoti. Lietuvos nacionaliniams parkams tenka ne tik gamtos ir kultūros nacionalinių vertybių išsaugojimo, bet ir pažintinio poilsio organizavimo darbai. Žodžiui „nacionalinis“ Lietuvoje teikiama ne tik valstybinės svarbos, bet ir etninio savitumo prasmė – kiekvienoje etnografinėje srityje (išskyrus Suvalkiją) yra nacionalinis parkas: Aukštaitijos, Dzūkijos, Kuršių nerijos, Trakų istorinis ir Žemaitijos. Visi nacionaliniai parkai turi direkcijas, informacijos centrus, kai kurie – gamtos mokyklas ir lankytojų aptarnavimo padalinius.
+				</p>
+				<p>
+					Šie nacionaliniai parkai užima 2,3 proc. Lietuvos teritorijos.
+				</p>
+				<ul class="rezervatai-list">
+					<li>Aukštaitijos nacionalinis parkas</li>
+					<li>Dzūkijos nacionalinis parkas</li>
+					<li>Kuršių nerijos nacionalinis parkas	</li>
+					<li>Trakų istorinis nacionalinis parkas</li>
+					<li>Žemaitijos nacionalinis parkas</li>
+				</ul>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div class="row sarasas-rows">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<h4>Regioniniai parkai</h4>
+				<p>
+					Regioniniai parkai – saugomos teritorijos, steigiamos gamtiniu, kultūriniu ir rekreaciniu požiūriu regioninės svarbos kraštovaizdžio kompleksams ir ekosistemoms saugoti, jų rekreaciniam ir ūkiniam naudojimui reguliuoti. Regioniniai parkai užima daugiau nei pusę visų saugomų teritorijų ploto, visi jie turi direkcijas, kai kurie – informacijos centrus, gamtos mokyklas.
+				</p>
+				<p>
+					Kiekvieno parko teritorija suskirstyta į funkcines zonas – išsaugančiąją (rezervatai ir draustiniai), apsauginę, rekreacinę, ūkinę. Parkų rezervatams ir draustiniams taikomi tokie patys reikalavimai kaip ir kitiems valstybiniams rezervatams ir draustiniams. Parkų lankytojai turi laikytis jų nuostatų, taip pat ūkinės veiklos ir kitų apribojimų, kuriuos nurodo informaciniai ženklai. Papildomos informacijos apie leidimus ir apribojimus galima gauti parkų direkcijose ar informacijos centruose.
+				</p>
+			</div>
+			<div class="col-sm-4" style="height: 400px; overflow-y: scroll;">
+				<div style="margin-top: 34px;">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Pavadinimas</th>
+								<th>Plotas (km2)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Labanoro regioninis parkas</td>
+								<td>553,43</td>
+							</tr>
+							<tr>
+								<td>Varnių regioninis parkas</td>
+								<td>338,00</td>
+							</tr>
+							<tr>
+								<td>Nemuno deltos regioninis parkas</td>
+								<td>288,70</td>
+							</tr>
+							<tr>
+								<td>Gražutės regioninis parkas</td>
+								<td>242,30</td>
+							</tr>
+							<tr>
+								<td>Nemuno kilpų regioninis parkas</td>
+								<td>240,80</td>
+							</tr>
+							<tr>
+								<td>Metelių regioninis parkas</td>
+								<td>177,29</td>
+							</tr>
+							<tr>
+								<td>Aukštadvario regioninis parkas</td>
+								<td>153,50</td>
+							</tr>
+							<tr>
+								<td>Kurtuvėnų regioninis parkas</td>
+								<td>150,90</td>
+							</tr>
+							<tr>
+								<td>Pagramančio regioninis parkas</td>
+								<td>144,20</td>
+							</tr>
+							<tr>
+								<td>Anykščių regioninis parkas</td>
+								<td>140,80</td>
+							</tr>
+							<tr>
+								<td>Biržų regioninis parkas</td>
+								<td>140,30</td>
+							</tr>
+							<tr>
+								<td>Sartų regioninis parkas</td>
+								<td>136,50</td>
+							</tr>
+							<tr>
+								<td>Salantų regioninis parkas</td>
+								<td>136,30</td>
+							</tr>
+							<tr>
+								<td>Veisiejų regioninis parkas</td>
+								<td>122,00</td>
+							</tr>
+							<tr>
+								<td>Panemunių regioninis parkas</td>
+								<td>115,63</td>
+							</tr>
+							<tr>
+								<td>Tytuvėnų regioninis parkas</td>
+								<td>114,30</td>
+							</tr>
+							<tr>
+								<td>Asvejos regioninis parkas</td>
+								<td>109,70</td>
+							</tr>
+							<tr>
+								<td>Ventos regioninis parkas</td>
+								<td>106,30</td>
+							</tr>
+							<tr>
+								<td>Neries regioninis parkas</td>
+								<td>99,00</td>
+							</tr>
+							<tr>
+								<td>Vištyčio regioninis parkas</td>
+								<td>97,00</td>
+							</tr>
+							<tr>
+								<td>Kauno marių regioninis parkas</td>
+								<td>96,00</td>
+							</tr>
+							<tr>
+								<td>Dubysos regioninis parkas</td>
+								<td>89,00</td>
+							</tr>
+							<tr>
+								<td>Dieveniškių istorinis regioninis parkas</td>
+								<td>87,94</td>
+							</tr>
+							<tr>
+								<td>Sirvėtos regioninis parkas</td>
+								<td>86,80</td>
+							</tr>
+							<tr>
+								<td>Krekenavos regioninis parkas</td>
+								<td>86,80</td>
+							</tr>
+							<tr>
+								<td>Pajūrio regioninis parkas</td>
+								<td>58,70</td>
+							</tr>
+							<tr>
+								<td>Žagarės regioninis parkas</td>
+								<td>49,30</td>
+							</tr>
+							<tr>
+								<td>Rambyno regioninis parkas</td>
+								<td>45,20</td>
+							</tr>
+							<tr>
+								<td>Verkių regioninis parkas</td>
+								<td>27,31</td>
+							</tr>
+							<tr>
+								<td>Pavilnių regioninis parkas</td>
+								<td>20,10</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+		<div class="row sarasas-rows">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-4">
+				<img class="content-images" src="images/1280px-Šventojimikieriukilpa.jpg" style="max-width: 100%;" />
+				<h5><a href="https://lt.wikipedia.org/wiki/%C5%A0ventosios_kra%C5%A1tovaizd%C5%BEio_draustinis" target="_blank">Šventosios kraštovaizdžio draustinis</a></h5>
+				
+				<img class="content-images" src="images/Balsys_lake.jpg" style="max-width: 100%;" />
+				<h5><a href="https://lt.wikipedia.org/wiki/%C5%BDali%C5%B3j%C5%B3_e%C5%BEer%C5%B3_kra%C5%A1tovaizd%C5%BEio_draustinis" target="_blank">Žaliųjų ežerų kraštovaizdžio draustinis</a></h5>
+			</div>
+			<div class="col-sm-4">
+				<h4>Draustiniai</h4>
+				<p>
+					Draustiniai steigiami siekiant išsaugoti gamtos ir kultūros paveldo kompleksus ar pavienius jų elementus, augalijos ir gyvūnijos rūšis. Ūkinė veikla, galinti turėti neigiamos įtakos saugomiems objektams, yra ribojama ar draudžiama. Lietuvoje įsteigta apie 300 valstybinių ir savivaldybių draustinių.
+				</p>
+				<p>
+					Draustiniuose saugomi įvairiausi objektai (priklausomai nuo draustinio):
+				</p>
+				<ul class="rezervatai-list">
+					<li>archeologiniai – archeologiniai kompleksai, mitologinės, sakralinės ir ritualinės vietovės;</li>
+					<li>botaniniai – augalų, grybų rūšys ir bendrijos, biotopai;</li>
+					<li>botaniniai-zoologiniai – augalų rūšys ir bendrijos bei gyvūnų rūšys;</li>
+					<li>entomologiniai – retieji vabzdžiai ir jų gyvenamosios vietos;</li>
+					<li>etnokultūriniai – senieji etnografiniai kaimai, tradicinis kultūrinis kraštovaizdis;</li>
+					<li>geologiniai žemės – gelmių struktūros, atodangos, riedulynai ir karstinės įgriuvos;</li>
+					<li>geomorfologiniai – reljefo formų įvairovė;</li>
+					<li>herpetologiniai – baliniai vėžliai;</li>
+					<li>hidrografiniai – upelių, upelių ir ežerų struktūra;</li>
+					<li>ichtiologiniai – žuvys ir jų jaunikliai;</li>
+					<li>kartografiniai – ypatingas geografines koordinates turinčios vietovės;</li>
+					<li>kraštovaizdžio – ypatingą vertę turintys kraštovaizdžiai su juose esančiais objektais;</li>
+					<li>kraštovaizdžio architektūros – architektūros ansambliai, dvarų parkai ir jų aplinka;</li>
+					<li>memorialiniai – vietovių, susijusių su istoriniais įvykiais ir įžymiaisiais žmonėmis, kultūrinė ir gamtinė aplinka;</li>
+					<li>ornitologiniai – paukščiai ir jų perimvietės;</li>
+					<li>pedologiniai – dirvožemio struktūros;</li>
+					<li>talasologiniai – jūriniai banginiai;</li>
+					<li>telmologiniai – pelkės (lankytis galima tik nuo rugsėjo 9 d. iki balandžio 1 d.);</li>
+					<li>teriologiniai – šikšnosparniai;</li>
+					<li>urbanistiniai – istoriniai miestai, miesteliai ir kaimai, architektūros ansambliai, inžineriniai įrenginiai, dvarų parkai ir jų aplinka.</li>
+				</ul>
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="row footeris">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">Copyright 2018 &copy; Laurynas Kirdeika</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</footer>
+	<!-- ALL MODALS -->
+	<div class="modal fade" id="cepkeliu-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Čepkaliai</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Čepkelių valstybinis gamtinis rezervatas yra pietiniame Lietuvos pakraštyje, Katros upe išvesta Lietuvos ir Baltarusijos valstybės siena taip pat yra ir rezervato pietinė riba. Iš šiaurės ir vakarų rezervatas ribojasi su Dzūkijos nacionaliniu parku, rytuose yra apsauginė zona. Pagal administracinį Lietuvos suskirstymą Čepkeliai yra Varėnos rajone. Direkcijoje įrengta ekspozicija.
+					</p>
+					<p>
+						Rezervato plotas 112 12 ha, aukštapelkė sudaro 54 proc. Direkcija Marcinkonyse. Rezervatas įsteigtas 1975 m. siekiant apsaugoti vieną seniausių ir unikaliausių Lietuvos miško pelkių, mišku apaugusias žemynines kopas, reliktinius ežerus, natūralų hidrologinį pelkės režimą, vertingą ir retą gyvūniją ir augaliją. Įkurtas vietoje 1960 m. įsteigto botaninio-zoologinio draustinio.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="cepkeliuBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="kamanu-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Kamanų rezervatas</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Kamanų valstybinis rezervatas yra šiaurės vakarų Lietuvoje, Akmenės rajone. Plotas 3935 ha, pelkės užima 67 proc. teritorijos. Direkcija Akmenėje II. Rezervatas įsteigtas 1979 m. birželio 29 d., siekiant išsaugoti didžiausių ir vertingiausių šiaurės Lietuvos molingų lygumų kompleksą su jam būdingomis morfologinėmis formomis, augalija ir gyvūnija.
+					</p>
+					<p>
+						Kamanų pelkė išsiskiria savo unikaliu reljefu, klampynių ir ežerokšnių gausa. Pelkių augalijai apaugus mineralinius gūbrius, tik aukščiausios jų dalys liko kyšoti kaip nedidelės Avino, Liepių, Trainauskienės salelės, o kitų vietoje susidarė net 12 klampynių su daugiau kaip 120 ežerokšnių. Pelkės puošmena yra Nimfėjų ir Salų ežerėliai su labai vaizdingomis pakrantėmis ir 6 ha ploto Kamanų ežeras. Pelkę iš visų pusių supa miškai. Pietvakariniame pakraštyje – pušynai, pietuose – daugiau beržynų, tačiau didesniąją miškų dalį sudaro tamsūs eglynai. Rezervate aptiktos net 26 saugomų augalų rūšys – čia gausu plačialapių klumpaičių, auga virgininis varpenis, mažalapė saulašarė ir kiti Lietuvoje labai reti augalai. Turtingas vabzdžių pasaulis. Nuolat gyvena vilkai, lankosi lūšys, aptinkama lazdyninė miegapelė. Kamanos garsėja dirviniais sėjikais, čia gausu ir tetervinų, peri juodieji gandrai, mažieji ereliai rėksniai. Auga baltoji vandens lelija, spanguolės.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="kamanuBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="kernaves-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Valstybinis Kernavės kultūrinis rezervatas</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Kernavės archeologijos ir istorijos muziejus-rezervatas įkurtas pietryčių Lietuvoje, dešiniajame Neries krante. Plotas 194,4 ha, direkcija Kernavėje. Rezervatas įsteigtas 1989 m. siekiant išsaugoti neįkainojamą archeologijos, istorijos ir gamtos paminklų kompleksą.
+					</p>
+					<p>
+						2004 m. Sudžou mieste (Kinija) vykusioje 28-ojoje Pasaulio paveldo komiteto sesijoje Kernavės archeologinė vietovė įtraukta į UNESCO pasaulio paveldo sąrašą.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="kernavesBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="viesviles-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Viešvilės rezervatas</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Viešvilės rezervatas – valstybinis rezervatas vakarinėje Lietuvoje, į šiaurę nuo Viešvilės; direkcija Eičiuose. Plotas 3216 ha, rezervatą supa 2459 ha buferinės apsaugos zona. Įsteigtas 1991 m. siekiant išsaugoti gamtiniu požiūriu labai vertingą, natūralią Viešvilės upelio baseino ekosistemą. 1993 m. paskelbtas tarptautinės svarbos pelke.
+					</p>
+					<p>
+						Pelkę supančiuose miškuose vyrauja sausi pušynai, tik vakarinėje dalyje auga šiek tiek eglynų. Rezervate gyvena lūšys, vilkai, ūdros. Viešvilės rezervatas yra viena gausiausių gervių peryklų Lietuvoje, nusileidžianti nebent Čepkeliams, čia nemažai ir kitų retų paukščių rūšių, turtingas augalų ir vabzdžių pasaulis.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="viesvilesBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="piliu-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Vilniaus pilių rezervatas</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Vilniaus pilių valstybinis kultūrinis rezervatas yra Vilniaus senamiestyje. Plotas 54,8 ha. Rezervatas įkurtas 1997 m. siekiant išsaugoti ir puoselėti Lietuvos istorinį valstybės ir dvasinės kultūros centrą – Vilniaus pilis, jų teritoriją ir čia esančias kultūros ir gamtos vertybes. Tai mažiausias valstybinis rezervatas Lietuvoje.
+					</p>
+					<p>
+						Iš architektūros paminklų žymiausia yra Vilniaus arkikatedra kartu su jos apylinkėmis, aikšte ir architektūrinėmis liekanomis. Svarbus kultūros paminklas – Trijų Kryžių paminklas ant Trijų Kryžių kalno.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="vilniausPilysBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="zuvinto-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Žuvinto biosferos rezervatas</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<p>
+						Žuvinto biosferos rezervatas yra pietų Lietuvoje, beveik visas priklauso Dovinės upės baseinui (tik Žaltyčio ežeras ir apylinkės priklauso Želsvelės baseinui). Dovinė ir Želsvelė yra Šešupės baseino upės. Rezervatas apima Žuvinto ir Amalvos pelkių kompleksus, į vakarus nuo Žuvinto esančius Buktos mišką ir Žaltyčio ežerą ir pelkes apie jį.
+					</p>
+					<p>
+						Rezervato plotas 5442 ha, pelkės užima 78 proc., Žuvinto ežeras 13 proc. Direkcija Aleknonyse. Rezervatas įsteigtas 1937 m. kaip valstybinis rezervatas, siekiant išsaugoti Žuvinto ežero ir jį supančių pelkynų ekosistemas, turtingą gyvūnijos pasaulį, ypač paukščius. 2002 m. tapo biosferos rezervatu. Yra nedidelis gamtos muziejus.
+					</p>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button id="zuvintoBtn" type="button" class="btn read-more-btn" onclick="goOutside(this)">Skaityti daugiau</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<script src="all-fiddly-diddly-code.js"></script>
+</body>
+</html>
